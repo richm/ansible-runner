@@ -10,7 +10,7 @@ Using pip
 
 Python 2.7+ and 3.6+ are supported and installable via pip::
 
-  $ pip install ansible-runner
+  $ pip install --pre ansible-runner
 
 
 Fedora

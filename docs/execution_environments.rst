@@ -58,6 +58,10 @@ An example invocation using the ``demo.yml`` playbook and ``inventory.ini`` inve
 
 Something to note here is that implicit ``localhost`` in this context is a containerized instantiation of an Ansible Execution Environment and as such you will not get Ansible Facts about your system if using ``gather_facts: true`` and targeting ``localhost`` in your playbook without explicit host definition in your inventory.
 
+To run with an image built with `ansible-builder` using `docker`::
+
+  $ ansible-runner playbook --container-image=my-aee-image:latest --container-runtime=docker demo.yml -i inventory.ini
+
 Notes and Considerations
 ------------------------
 
